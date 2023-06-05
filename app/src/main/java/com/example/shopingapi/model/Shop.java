@@ -1,6 +1,10 @@
 package com.example.shopingapi.model;
 
+import android.provider.Telephony;
+
 import com.google.gson.annotations.SerializedName;
+
+import java.util.List;
 
 public class Shop {
     @SerializedName("id")
@@ -34,65 +38,49 @@ public class Shop {
     private String currency;
     @SerializedName("current_subtotal_price")
     private String currentSubtotalPrice;
+    @SerializedName("current_subtotal_price_set")
+    private SetMoney currentSubtotalPriceSet;
+    @SerializedName("current_total_discounts")
+    private String currentTotalDiscounts;
+    @SerializedName("current_total_discounts_set")
+    private SetMoney currentTotalDiscountsSet;
+    @SerializedName("current_total_duties_set")
+    private SetMoney currentTotalDutiesSet;
+    @SerializedName("current_total_price")
+    private String currentTotalPrice;
+    @SerializedName("current_total_price_set")
+    private SetMoney currentTotalPriceSet;
+    @SerializedName("current_total_tax")
+    private String currentTotalTax;
+    @SerializedName("current_total_tax_set")
+    private SetMoney currentTotalTaxSet;
+    @SerializedName("customer_locale")
+    private String customerLocale;
+    @SerializedName("device_id")
+    private String deviceId;
+    @SerializedName("discount_codes")
+    private List<String> discountCodes;
+    @SerializedName("estimated_taxes")
+    private Boolean estimatedTaxes;
+    @SerializedName("financial_status")
+    private String financialStatus;
+    @SerializedName("fulfillment_status")
+    private String fulfillmentStatus;
+    private String gateway;;
+    @SerializedName("landing_site")
+    private String landingSite;
+    @SerializedName("landing_site_ref")
+    private String landingSiteRef;
+    @SerializedName("location_id")
+    private String locationId;
+    private String name;
+    private String mote;
+    @SerializedName("note_attributes")
+    private List<String> note_attributes;
 }
 
+//
 
-//         "current_subtotal_price_set": {
-//         "shop_money": {
-//         "amount": "2.00",
-//         "currency_code": "USD"
-//         },
-//         "presentment_money": {
-//         "amount": "2.00",
-//         "currency_code": "USD"
-//         }
-//         },
-//         "current_total_discounts": "0.00",
-//         "current_total_discounts_set": {
-//         "shop_money": {
-//         "amount": "0.00",
-//         "currency_code": "USD"
-//         },
-//         "presentment_money": {
-//         "amount": "0.00",
-//         "currency_code": "USD"
-//         }
-//         },
-//         "current_total_duties_set": null,
-//         "current_total_price": "1.18",
-//         "current_total_price_set": {
-//         "shop_money": {
-//         "amount": "1.18",
-//         "currency_code": "USD"
-//         },
-//         "presentment_money": {
-//         "amount": "1.18",
-//         "currency_code": "USD"
-//         }
-//         },
-//         "current_total_tax": "1.23",
-//         "current_total_tax_set": {
-//         "shop_money": {
-//         "amount": "1.23",
-//         "currency_code": "USD"
-//         },
-//         "presentment_money": {
-//         "amount": "1.23",
-//         "currency_code": "USD"
-//         }
-//         },
-//         "customer_locale": "en-US",
-//         "device_id": null,
-//         "discount_codes": [],
-//         "estimated_taxes": false,
-//         "financial_status": "paid",
-//         "fulfillment_status": null,
-//         "gateway": "shopify_payments",
-//         "landing_site": "/",
-//         "landing_site_ref": null,
-//         "location_id": null,
-//         "name": "28",
-//         "note": null,
 //         "note_attributes": [],
 //         "number": 28,
 //         "order_number": 28,
