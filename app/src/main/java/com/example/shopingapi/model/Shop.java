@@ -36,6 +36,7 @@ public class Shop {
     private String currentSubtotalPrice;
 }
 
+
 //         "current_subtotal_price_set": {
 //         "shop_money": {
 //         "amount": "2.00",

@@ -2,11 +2,11 @@ package com.example.shopingapi.model;
 
 import com.google.gson.annotations.SerializedName;
 
-public class ShopMoney {
-
-    private Money money;
+public class Money {
+    private String amount;
+    @SerializedName("currency_code")
+    private String currencyCode;
 }
-
 //         "current_subtotal_price_set": {
 //         "shop_money": {
 //         "amount": "2.00",

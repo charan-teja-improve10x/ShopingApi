@@ -1,8 +1,6 @@
 package com.example.shopingapi.model;
 
-import com.google.gson.annotations.SerializedName;
-
-public class ShopMoney {
+public class PresentmentMoney {
 
     private Money money;
 }
@@ -17,4 +15,3 @@ public class ShopMoney {
 //         "currency_code": "USD"
 //         }
 //         },
-
