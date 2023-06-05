@@ -130,6 +130,19 @@ public class Shop {
     private String totalTax;
     @SerializedName("total_tax_set")
     private MoneySet totalTaxSet;
+    @SerializedName("total_tip_received")
+    private String totalTipReceived;
+    @SerializedName("total_weight")
+    private Integer totalWeight;
+    @SerializedName("updated_at")
+    private String updatedAt;
+    @SerializedName("user_id")
+    private String userId;
+    @SerializedName("discount_applications")
+    private List<String> discountApplications;
+    private List<String> fulfillments;
+    @SerializedName("line_items")
+    private List<LineItem> lineItems;
 
     public String getShopId() {
         return shopId;
@@ -675,17 +688,61 @@ public class Shop {
         this.totalTaxSet = totalTaxSet;
     }
 
-    @SerializedName("total_tip_received")
-    private String totalTipReceived;
-    @SerializedName("total_weight")
-    private Integer totalWeight;
-    @SerializedName("updated_at")
-    private String updatedAt;
-    @SerializedName("user_id")
-    private String userId;
-    @SerializedName("discount_applications")
-    private List<String> discountApplications;
-    private List<String> fulfillments;
+    public String getTotalTipReceived() {
+        return totalTipReceived;
+    }
+
+    public void setTotalTipReceived(String totalTipReceived) {
+        this.totalTipReceived = totalTipReceived;
+    }
+
+    public Integer getTotalWeight() {
+        return totalWeight;
+    }
+
+    public void setTotalWeight(Integer totalWeight) {
+        this.totalWeight = totalWeight;
+    }
+
+    public String getUpdatedAt() {
+        return updatedAt;
+    }
+
+    public void setUpdatedAt(String updatedAt) {
+        this.updatedAt = updatedAt;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+
+    public List<String> getDiscountApplications() {
+        return discountApplications;
+    }
+
+    public void setDiscountApplications(List<String> discountApplications) {
+        this.discountApplications = discountApplications;
+    }
+
+    public List<String> getFulfillments() {
+        return fulfillments;
+    }
+
+    public void setFulfillments(List<String> fulfillments) {
+        this.fulfillments = fulfillments;
+    }
+
+    public List<LineItem> getLineItems() {
+        return lineItems;
+    }
+
+    public void setLineItems(List<LineItem> lineItems) {
+        this.lineItems = lineItems;
+    }
 }
 
 //
