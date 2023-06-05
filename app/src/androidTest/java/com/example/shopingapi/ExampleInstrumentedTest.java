@@ -10,6 +10,15 @@ import org.junit.runner.RunWith;
 
 import static org.junit.Assert.*;
 
+import com.example.shopingapi.model.Shop;
+import com.example.shopingapi.network.ShopApi;
+import com.example.shopingapi.network.ShoppingApiStore;
+
+import java.io.IOException;
+import java.util.List;
+
+import retrofit2.Call;
+
 /**
  * Instrumented test, which will execute on an Android device.
  *
@@ -23,4 +32,6 @@ public class ExampleInstrumentedTest {
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
         assertEquals("com.example.shopingapi", appContext.getPackageName());
     }
+
+
 }
