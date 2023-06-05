@@ -1,6 +1,6 @@
 package com.example.shopingapi.network;
 
-import com.example.shopingapi.Shop;
+import com.example.shopingapi.model.Shop;
 
 import java.util.List;
 
