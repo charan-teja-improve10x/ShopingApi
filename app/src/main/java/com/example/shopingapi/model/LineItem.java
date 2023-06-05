@@ -296,47 +296,5 @@ public class LineItem {
     public void setDiscountAllocations(List<String> discountAllocations) {
         this.discountAllocations = discountAllocations;
     }
-}
 
-//         "tax_lines": [
-//         {
-//         "channel_liable": false,
-//         "price": "1.64",
-//         "price_set": {
-//         "shop_money": {
-//         "amount": "1.64",
-//         "currency_code": "USD"
-//         },
-//         "presentment_money": {
-//         "amount": "1.64",
-//         "currency_code": "USD"
-//         }
-//         },
-//         "rate": 0.04,
-//         "title": "STATE TAX"
-//         },
-//         {
-//         "channel_liable": false,
-//         "price": "1.23",
-//         "price_set": {
-//         "shop_money": {
-//         "amount": "1.23",
-//         "currency_code": "USD"
-//         },
-//         "presentment_money": {
-//         "amount": "1.23",
-//         "currency_code": "USD"
-//         }
-//         },
-//         "rate": 0.03,
-//         "title": "COUNTY TAX"
-//         }
-//         ],
-//         "duties": [],
-//         "discount_allocations": []
-//         }
-//         ],
-//         "payment_terms": null,
-//         "refunds": []
-//         }
-//         ]
+}

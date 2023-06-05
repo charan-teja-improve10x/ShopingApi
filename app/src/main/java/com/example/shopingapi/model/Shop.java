@@ -26,8 +26,8 @@ public class Shop {
     private Integer checkoutId;
     @SerializedName("checkout_token")
     private String checkoutToken;
-      @SerializedName("client_details")
-      private ClientDetails clientDetails;
+    @SerializedName("client_details")
+    private ClientDetails clientDetails;
     @SerializedName("closed_at")
     private String closeAt;
     private Boolean confirmed;
@@ -64,7 +64,8 @@ public class Shop {
     private String financialStatus;
     @SerializedName("fulfillment_status")
     private String fulfillmentStatus;
-    private String gateway;;
+    private String gateway;
+    ;
     @SerializedName("landing_site")
     private String landingSite;
     @SerializedName("landing_site_ref")
@@ -143,6 +144,9 @@ public class Shop {
     private List<String> fulfillments;
     @SerializedName("line_items")
     private List<LineItem> lineItems;
+    @SerializedName("payment_terms")
+    private String paymentTerms;
+    private List<String> refunds;
 
     public String getShopId() {
         return shopId;
@@ -743,114 +747,21 @@ public class Shop {
     public void setLineItems(List<LineItem> lineItems) {
         this.lineItems = lineItems;
     }
+
+    public String getPaymentTerms() {
+        return paymentTerms;
+    }
+
+    public void setPaymentTerms(String paymentTerms) {
+        this.paymentTerms = paymentTerms;
+    }
+
+    public List<String> getRefunds() {
+        return refunds;
+    }
+
+    public void setRefunds(List<String> refunds) {
+        this.refunds = refunds;
+    }
+
 }
-
-//
-
-//         "line_items": [
-//         {
-//         "id": 122691,
-//         "admin_graphql_api_id": "gid://shopify/somethingelse",
-//         "fulfillable_quantity": 1,
-//         "fulfillment_service": "manual",
-//         "fulfillment_status": null,
-//         "gift_card": false,
-//         "grams": 0,
-//         "name": "That one product | Green",
-//         "origin_location": {
-//         "id": 329,
-//         "country_code": "US",
-//         "province_code": "GA",
-//         "name": "JohnDoe",
-//         "address1": "123 everyway",
-//         "address2": "",
-//         "city": "Atlanta",
-//         "zip": "30349"
-//         },
-//         "pre_tax_price": "41.00",
-//         "pre_tax_price_set": {
-//         "shop_money": {
-//         "amount": "41.00",
-//         "currency_code": "USD"
-//         },
-//         "presentment_money": {
-//         "amount": "41.00",
-//         "currency_code": "USD"
-//         }
-//         },
-//         "price": "41.00",
-//         "price_set": {
-//         "shop_money": {
-//         "amount": "41.00",
-//         "currency_code": "USD"
-//         },
-//         "presentment_money": {
-//         "amount": "41.00",
-//         "currency_code": "USD"
-//         }
-//         },
-//         "product_exists": true,
-//         "product_id": 655663,
-//         "properties": [],
-//         "quantity": 1,
-//         "requires_shipping": true,
-//         "sku": "101",
-//         "tax_code": "P2",
-//         "taxable": true,
-//         "title": "That one product",
-//         "total_discount": "0.00",
-//         "total_discount_set": {
-//         "shop_money": {
-//         "amount": "0.00",
-//         "currency_code": "USD"
-//         },
-//         "presentment_money": {
-//         "amount": "0.00",
-//         "currency_code": "USD"
-//         }
-//         },
-//         "variant_id": 3966283,
-//         "variant_inventory_management": "shopify",
-//         "variant_title": "Green",
-//         "vendor": "Jim's",
-//         "tax_lines": [
-//         {
-//         "channel_liable": false,
-//         "price": "1.64",
-//         "price_set": {
-//         "shop_money": {
-//         "amount": "1.64",
-//         "currency_code": "USD"
-//         },
-//         "presentment_money": {
-//         "amount": "1.64",
-//         "currency_code": "USD"
-//         }
-//         },
-//         "rate": 0.04,
-//         "title": "STATE TAX"
-//         },
-//         {
-//         "channel_liable": false,
-//         "price": "1.23",
-//         "price_set": {
-//         "shop_money": {
-//         "amount": "1.23",
-//         "currency_code": "USD"
-//         },
-//         "presentment_money": {
-//         "amount": "1.23",
-//         "currency_code": "USD"
-//         }
-//         },
-//         "rate": 0.03,
-//         "title": "COUNTY TAX"
-//         }
-//         ],
-//         "duties": [],
-//         "discount_allocations": []
-//         }
-//         ],
-//         "payment_terms": null,
-//         "refunds": []
-//         }
