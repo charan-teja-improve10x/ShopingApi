@@ -51,6 +51,11 @@ public class LineItem {
     @SerializedName("variant_title")
     private String variantTitle;
     private String vendor;
+    @SerializedName("tax_lines")
+    private List<TaxLine> taxLines;
+    private List<String> duties;
+    @SerializedName("discount_allocations")
+    private List<String> discountAllocations;
 
     public Integer getId() {
         return id;
@@ -267,9 +272,32 @@ public class LineItem {
     public void setVendor(String vendor) {
         this.vendor = vendor;
     }
+
+    public List<TaxLine> getTaxLines() {
+        return taxLines;
+    }
+
+    public void setTaxLines(List<TaxLine> taxLines) {
+        this.taxLines = taxLines;
+    }
+
+    public List<String> getDuties() {
+        return duties;
+    }
+
+    public void setDuties(List<String> duties) {
+        this.duties = duties;
+    }
+
+    public List<String> getDiscountAllocations() {
+        return discountAllocations;
+    }
+
+    public void setDiscountAllocations(List<String> discountAllocations) {
+        this.discountAllocations = discountAllocations;
+    }
 }
 
-//         "vendor": "Jim's",
 //         "tax_lines": [
 //         {
 //         "channel_liable": false,
