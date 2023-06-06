@@ -33,5 +33,6 @@ public class ExampleUnitTest {
         assertNotNull(shops);
         assertFalse(shops.isEmpty());
         System.out.println(new Gson().toJson(shops));
+        System.out.println(new Gson().toJson(shops.get(0).getClientDetails()));
     }
 }

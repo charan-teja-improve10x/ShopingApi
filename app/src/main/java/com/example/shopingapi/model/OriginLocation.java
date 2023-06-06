@@ -79,10 +79,3 @@ public class OriginLocation {
         this.zip = zip;
     }
 }
-// "origin_location": {
-//         "name": "JohnDoe",
-//         "address1": "123 everyway",
-//         "address2": "",
-//         "city": "Atlanta",
-//         "zip": "30349"
-//         },

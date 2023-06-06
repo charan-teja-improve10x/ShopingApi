@@ -65,7 +65,6 @@ public class Shop {
     @SerializedName("fulfillment_status")
     private String fulfillmentStatus;
     private String gateway;
-    ;
     @SerializedName("landing_site")
     private String landingSite;
     @SerializedName("landing_site_ref")
